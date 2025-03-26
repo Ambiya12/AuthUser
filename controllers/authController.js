@@ -23,7 +23,7 @@ export const createUser = async (req, res) => {
         });
 
         newUser.save();
-        return res.status(201).json('User registered successfully');
+        return res.status(201).json({message: `Welcome ${first_name} to thr Events`});
     }
     catch (error) {
         console.log(error);
